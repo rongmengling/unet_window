@@ -7,7 +7,7 @@ Step one: apply different intensity windows to the original image to find more p
 
 # Dataset
 The 3DIRCADb dataset includes 20 venous phase enhanced CT volumes from various European hospitals with different CT scanners. And the dataset is stored in DICOM format. Available on http://ircad.fr/research/3d-ircadb-01 
-
+![image](https://github.com/rongmengling/unet_window/blob/master/images/liverlesions.jpg)
 
 # Result
 UNet applied with this preprocessing gets higher DICE scores than the original segmentation result,and the experiment obtained the optimal CT value range based on 3DIRCADb. The optimal window width range for liver segmentation is 200HU--240HU and the window level range is 30HU--50HU, so the optimal CT value range is -90HU--170HU.The optimal window width for lesion segmentation is 130HU--150HU and the window level is 50HU--70HU, so the optimal CT value range is -25HU--145HU.
