@@ -1,6 +1,6 @@
 #Unet_Window
 This network model contains UNet code, which was proposed by Ronneberger et al. In “U-Net: Convolutional Networks for Biomedical Image Segmentation”, which has been developed and widely used. This network model is introduced in “Intensity windowing of CT images for automatic liver and tumor segmentation”.<br>
-=====
+
 This is a network model for segmenting the liver and its lesions. On the basis of UNet, a window technology is added. The 3DIRCADb data set is segmented step by step and the best CT value ranges of the liver and its lesions are obtained. Generate _ *. Py completes all the routine data extraction and data preprocessing work (including grayscale, equalization, normalization, etc.), where adjustment of the window width and window level is the focus of improvement. Unet.py: Network structure definition of unet. Test_and_loss.py: Unet test evaluation.
 
 # Method 
